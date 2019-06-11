@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background_app"
+    tools:context=".CharacterFragment">
+
+    <TextView
+        android:id="@+id/tv_ChooseCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="Escoge tu personaje"
+        android:textColor="@color/text"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_characters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_view">
+
+        <ImageView
+            android:id="@+id/iv_cat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/margin_view"
+            android:src="@drawable/catExample"/>
+
+        <ImageView
+            android:id="@+id/iv_dog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/margin_view"
+            android:src="@drawable/dogExample"
+            android:layout_toEndOf="@+id/iv_cat"
+            android:layout_toRightOf="@+id/iv_cat"/>
+
+        <ImageView
+            android:id="@+id/iv_dinosaur"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/margin_view"
+            android:src="@drawable/dinosaurExample"
+            android:layout_below="@+id/iv_cat" />
+
+        <ImageView
+            android:id="@+id/iv_chicken"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/margin_view"
+            android:src="@drawable/chickenExample"
+            android:layout_toEndOf="@+id/iv_dinosaur"
+            android:layout_toRightOf="@+id/iv_dinosaur"
+            android:layout_alignBaseline="@+id/iv_dinosaur"
+            android:layout_below="@+id/iv_dog"/>
+
+        <ImageView
+            android:id="@+id/iv_shark"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/margin_view"
+            android:src="@drawable/shakExample"
+            android:layout_below="@+id/iv_dinosaur"/>
+
+        <ImageView
+            android:id="@+id/iv_penguin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/margin_view"
+            android:src="@drawable/pinguinExample"
+            android:layout_toEndOf="@+id/iv_shark"
+            android:layout_toRightOf="@+id/iv_shark"
+            android:layout_below="@+id/iv_chicken"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_Start"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_view"
+        android:text="EMPEZAR JUEGO"
+        android:textSize="@dimen/text_main"
+        android:background="@color/background_button"
+        android:textColor="@color/text_button"/>
+
+</LinearLayout>
