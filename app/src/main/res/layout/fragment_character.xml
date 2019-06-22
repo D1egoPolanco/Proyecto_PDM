@@ -13,7 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="35sp"
-        android:text="Escoge tu personaje"
+        android:text="¡Escoge tu personaje e inicia el juego!"
+        android:textAlignment="center"
         android:textColor="@color/text"/>
 
     <RelativeLayout
@@ -27,14 +28,14 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="@dimen/margin_view"
-            android:src="@drawable/catExample"/>
+            android:src="@drawable/neko"/>
 
         <ImageView
             android:id="@+id/iv_dog"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="@dimen/margin_view"
-            android:src="@drawable/dogExample"
+            android:src="@drawable/dogui"
             android:layout_toEndOf="@+id/iv_cat"
             android:layout_toRightOf="@+id/iv_cat"/>
 
@@ -43,7 +44,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="@dimen/margin_view"
-            android:src="@drawable/dinosaurExample"
+            android:src="@drawable/rex"
             android:layout_below="@+id/iv_cat" />
 
         <ImageView
@@ -51,7 +52,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="@dimen/margin_view"
-            android:src="@drawable/chickenExample"
+            android:src="@drawable/pio"
             android:layout_toEndOf="@+id/iv_dinosaur"
             android:layout_toRightOf="@+id/iv_dinosaur"
             android:layout_alignBaseline="@+id/iv_dinosaur"
@@ -62,7 +63,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="@dimen/margin_view"
-            android:src="@drawable/shakExample"
+            android:src="@drawable/sharky"
             android:layout_below="@+id/iv_dinosaur"/>
 
         <ImageView
@@ -70,21 +71,11 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="@dimen/margin_view"
-            android:src="@drawable/pinguinExample"
+            android:src="@drawable/pingui"
             android:layout_toEndOf="@+id/iv_shark"
             android:layout_toRightOf="@+id/iv_shark"
             android:layout_below="@+id/iv_chicken"/>
 
     </RelativeLayout>
-
-    <Button
-        android:id="@+id/bt_Start"
-        android:layout_width="@dimen/width_button"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_view"
-        android:text="EMPEZAR JUEGO"
-        android:textSize="@dimen/text_main"
-        android:background="@color/background_button"
-        android:textColor="@color/text_button"/>
 
 </LinearLayout>
